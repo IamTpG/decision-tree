@@ -44,7 +44,7 @@ def StandardiseColumn(rows, id):
 def ReadFile(filename):
     """Read data and return it as rows"""
 
-    filename = "dataset\\" + filename + ".csv"
+    filename = "source\\dataset\\" + filename + ".csv"
     rows = []
 
     with open(filename, newline="") as csvfile:
@@ -61,8 +61,8 @@ def ReadFile(filename):
 def StandardiseFile(filename):
     """Remove rows having unknown data"""
 
-    newfile = "dataset\\standardised." + filename + ".csv"
-    filename = "dataset\\origin." + filename + ".csv"
+    newfile = "source\\dataset\\standardised." + filename + ".csv"
+    filename = "source\\dataset\\origin." + filename + ".csv"
     rows = []
 
     with open(filename, newline="") as csvfile:
