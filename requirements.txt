@@ -3,4 +3,5 @@ matplotlib
 graphviz
 pandas
 scikit-learn
-
+pandas
+seaborn
